@@ -309,7 +309,7 @@ img,video {
 blockquote.quote span {
     font-size: 1.2em;
     line-height: 2em;
-    background-color: #8CE4C8;
+    background-color: #D6D6DA; /* sterling */
     padding: 3px;
 }
 
@@ -540,6 +540,90 @@ span.blacksquare {
     margin-top: -20px;
     width: 90%;
 }
+
+/* ------------  DRUG BOX  ----------------- */
+.drugbox {
+            background-color: #F1F1F2;
+            padding: 30px;
+            font-family: Noto,sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 600px;
+            opacity: 0.9;
+           }
+        
+.drugbox p b {
+        font-weight: 600;
+
+}
+        
+        .drugbox label,h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 20px 0 0 0;
+        }
+        
+        .drugbox #drugname {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+        }
+        
+        #basicinfo {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto 100px 100px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+        }
+        
+        #additionalinfo {
+            font-size: 1.1em;
+            font-weight: 400; 
+        }
+        
+        #basicinfo p {
+            margin: 5px 0;
+        }
+        
+        .drugbox p a:link {
+            color: #383838;
+            text-decoration: none;
+            border-bottom: 1px #4b4b4e solid;
+        }
+        
+        .drugbox p a:visited {
+            color: #383838;
+            text-decoration: none;
+            border-bottom: 1px #4b4b4e solid;
+        }
+        
+            .drugbox p a:hover {
+            color: #48509E;
+            text-decoration: none;
+            border-bottom: 1px #48509E solid;
+        }
+        
+        input#search {
+            font-family: Noto,sans-serif;
+            font-weight: 600;
+            width: 100%;
+            border-radius: .25rem;
+            font-size: 14px;
+            padding: 12px 18px;
+            background-color: #0e75a5;
+            border: 1px solid #042e49;
+            color: #fff;
+        }
+        
+        input#search:hover {
+            background-color: #5289d3;
+            border: 1px solid #042e49;
+            color: #fff;
+        }
 
 
 
