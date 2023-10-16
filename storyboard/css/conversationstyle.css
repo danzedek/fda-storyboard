@@ -1,0 +1,546 @@
+/* ------------------------- SITE STYLES --------------------------- */
+
+/* COLORS */
+/* black: #000000 */
+/* jet: #202020 */
+/* charcoal: #383838 */
+/* slate: #555768 */
+/* storm: #AFB2BA */
+/* sterling: #D6D6DA */
+/* casper: #F1F1F2 */
+/* mist: #F8F8F8 */
+/* white: #ffffff */
+
+/* chili: #990000 */
+/* tomato: #D8352A */
+/* salmon: #E37169 */
+/* dusty: #ECC3C0 */
+
+/* tanzanite: #29339B */
+/* iris: #48509E */
+/* cornflower: #B1B4DA */
+
+/* emerald: #047C56 */
+/* jungle: #02A371 */
+/* jade: #19C992 */
+/* mint: #8CE4C8 */
+
+/* yolk: #F5A623 */
+/* custard: #F6E7AD */
+
+
+/* ------------------- DROP ACCOUNTS STYLES ------------------------ */
+
+
+body {
+    color:#000;
+    margin:0;
+    line-height: 18px;
+}
+
+figure {
+    margin:30px 0;
+}
+
+.content-lead-image {
+    background-image: url(../images/ADF_TheConversation_Cyr01.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+min-height: 800px;
+}
+
+.content-header-container {
+    background-color: #053fc5;
+    min-height: 650px;
+    background-image: url(../images/Opener_Adria%20Fruitos-gangster.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    margin-bottom: 50px;
+}
+
+.content-lead-image .headlines {
+    width: 40%;
+    padding: 50px;
+    color: #fff;
+    margin:0 50px;
+
+}
+
+.content-lead-image .headlines h1 {
+font-family: Montserrat,sans-serif;
+font-size: 5em;
+    color: #fff;
+line-height: .9em;
+    position: relative;
+    top: 200px;
+}
+
+
+
+h2.deck {
+font-family: Montserrat,sans-serif;
+color: #D6D6DA;
+font-size: 1.3em;
+line-height: 1.8em;
+    position: relative;
+    top: 180px;
+}
+
+
+
+h3.byline {
+    font-family: Noto,sans-serif;
+    font-weight: 600;
+    color: #555768;
+    font-size: 1em;
+    line-height: 2;
+    margin: 30px 0;
+}
+
+h3.byline a:link,a:visited {
+    color: #555768;
+    text-decoration: none;
+    border-bottom: 1px solid #555768;
+}
+
+h3.byline a:hover,a:active {
+    color: #48509E;
+    text-decoration: none;
+    border-bottom: 1px dotted #48509E;
+}
+
+h3.byline span {
+    font-weight: 100;
+}
+
+
+.content-body {
+    font-family: Libre Baskerville,Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content-body a:link,a:visited {
+    color: #555768;
+    text-decoration: none;
+    border-bottom: 1px solid #555768;
+}
+
+.content-body a:hover,a:active {
+    color: #48509E;
+    text-decoration: none;
+    border-bottom: 1px dotted #48509E;
+}
+
+
+.content-body .dropcap:first-letter {
+    font-size: 4.8em;
+    font-family: Noto,sans-serif;
+    font-weight: 400;
+    line-height: .9;
+    padding: 3px 10px 0 10px;
+    min-width: 60px;
+    float:left;
+    background-color: #AFB2BA; /* storm */
+    color: #383838; /* charcoal */
+    margin-right: 12px;
+    text-align: center;
+}
+
+.content-body .dropcap-big:first-letter {
+    font-size: 8.1em;
+    font-family: "Noto",sans-serif;
+    font-weight: 400;
+    line-height: 0.9;
+    padding: 3px 10px 0 10px;
+    min-width: 100px;
+    float:left;
+    background-color: #AFB2BA; /* storm */
+    color: white; /* charcoal */
+    margin-right: 16px;
+    text-align: center;
+}
+
+.content-lead-image img {
+    display: block;
+    width: 100%;
+}
+
+.grid-ten {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.grid-two {
+    width: 350px;
+    margin-left: 30px;
+    float: left;
+}
+
+.grid-two-right {
+    width: 350px;
+    margin-right: 60px;
+    float: right;
+}
+
+h2.subhead, h3.subhead {
+font-weight: 700;
+margin-bottom: 12px;
+}
+
+h2.subhead {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1pz;
+    color: #383838;
+    font-family: Noto,sans-serif;
+    background-color: white;
+    font-weight: 600;
+    margin: 50px 0 40px 0;
+    border: 7px #383838 solid;
+    padding: 20px;
+}
+
+h2.subhead span.highlight {
+    background-color: #F5A623; /* yolk */
+    padding: 45px 10px 10px 10px;
+    border-left: 6px solid #383838;
+}
+
+h2.bignumber {
+    font-family: Libre Baskerville, serif;
+    font-size: 5em;
+    font-weight: 100;
+    color: #D6D6DA;
+    text-align: center;
+    margin: 0px 0 -60px 0;
+}
+
+.figure .figcaption, .figure figcaption, figure .figcaption, figure figcaption, figcaption {
+    color: #212121;
+    display: block;
+    font-family: Noto,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 6px;
+}
+
+*.smallphoto figcaption, .mediumphoto figcaption {
+    color: #212121;
+    display: block;
+    font-size: 13px;
+    font-family: Noto,Helvetica Neue,Helvetica,sans-serif;
+    line-height: 18px;
+    padding-top: 6px;
+}
+
+*.smallphoto {
+    margin:0 30px 10px 0;
+    width: 50%;
+    float:left;
+}
+
+*.mediumphoto {
+    margin:0 auto 50px auto;
+    width: 65%;
+}
+
+img,video {
+    width: 100%;
+}
+
+.scrolly1 {
+    background-image: url(../images/Step%2001_Adria%20Fruitos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.scrolly2 {
+    background-image: url(../images/Step%2002_Adria%20Fruitos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.scrolly3 {
+    background-image: url(../images/Step%2003_Adria%20Fruitos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.scrolly4 {
+    background-image: url(../images/Step%2004_Adria%20Fruitos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+
+.scrollytext  {
+    background-color: #F6E7AD;
+    width: 33%;
+    padding:30px;
+    position: relative;
+    left:30px;
+    top: 30px;
+}
+
+.scrollytext p {
+        font-family: Libre Baskerville,Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color:#000;
+}
+
+blockquote.quote span {
+    font-size: 1.2em;
+    line-height: 2em;
+    background-color: #8CE4C8;
+    padding: 3px;
+}
+
+span.signer {
+    font-family: Noto, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+span.highlight {
+    background-color: #F6E7AD;
+    font-family: Noto, Helvetica Neue,sans-serif;
+    font-weight: 600;
+}
+
+.newsection {
+    margin-top: 50px;
+}
+
+.textmsg-right {
+    position: relative;
+    background-color: #02A371;
+    width: 33%;
+    padding: 10px;
+    border-radius: 10px;
+    min-width:250px;
+    margin: 30px 10% 0 auto;
+    color: #fff;
+    font-family: Noto, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight:400;
+}
+
+.textmsg-right:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	right: 5%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #02A371;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.textmsg-left {
+    position: relative;
+    background-color: #D6D6DA;
+    width: 33%;
+    padding: 10px;
+    border-radius: 10px;
+    min-width:250px;
+    margin: 30px auto 0 10%;
+    color: #000;
+    font-family: Noto, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight:400;
+}
+
+.textmsg-left:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 9%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #D6D6DA;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.textmsg-right p, .textmsg-left p {
+    margin: 0;
+}
+
+/*animated number counter for stolen check data vis */
+#counter {
+    font-family: Noto,sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+    text-align: center;
+    color: #F5A623;
+} 
+
+h5.countertext {
+    font-family: Noto,sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #1c1c1c;
+    text-align: center; 
+    margin-top: -5px;
+}
+
+h5.countertext span {
+    color: #F5A623;
+    background-color: #1c1c1c;
+    padding: 1px 5px;
+}
+
+/* -------------- AUTHORS ----------------- */
+.wider-grid {
+    display:grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content-authors {
+    font-size: 12px;
+    font-family: Helvetica,Noto,sans-serif;
+}
+
+.content-authors h3 {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.content-authors ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h3.border, h4.legacy.border, h5.border, h6.border {
+border-bottom: 1px solid #d7d7db;
+padding-bottom: .33em;
+}
+
+.content-authors-group .role {
+color: #4b4b4e;
+font-size: 11px;
+line-height: 1.4;
+margin-left: 60px;
+}
+
+.content-authors-group img {
+border-radius: 50%;
+display: block;
+float: left;
+margin: 0 12px 0px 0;
+width: 48px;
+}
+
+/* --------------- BLACK OUT FOR PROFANITY IN TWEETS ------------ */
+
+span.blacksquare {
+    font-size: 1.2em;
+    letter-spacing: -12px;
+    margin: 0 9px 0 -3px;
+    position:relative;
+    top: 3px;
+    color: #1c1c1c;
+}
+
+span.blacksquare {
+}
+
+/* --------------- DONATE BOX FOR BOTTOM OF ARTICLE ------------- */
+.donatebox {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #F1F1F2;
+}
+
+.donatebox a:link,a:visited  {
+    font-family: Noto,sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    padding:10px;
+    background-color: #D8352A;
+}
+
+.donatebox a:hover {
+    background-color: #990000;
+}
+
+.donatebox h3 {
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 -10px 0;
+    letter-spacing: 0.25px;
+}
+
+/* ---------------------- TEASERS ------------------------ */
+
+.teasers h3 {
+    color: #000;
+    font-family: Noto,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 1px solid #d7d7db;
+    padding-bottom:.33em;
+    margin-top: 30px;
+}
+
+.teasers {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 20px;
+}
+
+.teaseritem {
+    height: 200px;
+}
+
+.teaseritem h4 {
+    font-family: Noto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #48509E;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -20px;
+    width: 90%;
+}
+
+
+
+
