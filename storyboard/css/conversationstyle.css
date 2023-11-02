@@ -614,7 +614,7 @@ span.blacksquare {
             border-bottom: 1px #48509E solid;
         }
         
-        input#search {
+        button#search {
             font-family: Noto,sans-serif;
             font-weight: 600;
             width: 100%;
@@ -626,7 +626,7 @@ span.blacksquare {
             color: #fff;
         }
         
-        input#search:hover {
+        button#search:hover {
             background-color: #5289d3;
             border: 1px solid #042e49;
             color: #fff;
@@ -638,6 +638,74 @@ p.reasons {
     margin: 20px 0 -5px 0;
 }
 
+/* ---------------  SCROLLAMA ------------------ */
+#scrolly {
+			position: relative;
+			background-color: #f3f3f3;
+			padding: 1rem;
+		}
 
+		article {
+			position: relative;
+			padding: 0;
+			max-width: 25%;
+			margin: 0 auto;
+		}
 
+		section#scrolly figure {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			background-color: #8a8a8a;
+            background-image: url(../images/AdobeStock_658895268_Video_HD_Preview.mov);
+			z-index: 0;
+            height: auto;
+		}
+
+		figure p {
+			text-align: left;
+			padding: 1rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 8rem;
+			font-weight: 900;
+			color: #fff;
+		}
+
+		.step {
+			margin: 0 auto 4rem auto;
+			color: #fff;
+			background-color: #383838;
+            z-index: 10;
+		}
+
+		.step:last-child {
+			margin-bottom: 0;
+		}
+
+		.step.is-active p {
+    font-family: Libre Baskerville,Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+    line-height: 1.6;
+            color:#f5a623;
+		}
+
+		.step p {
+			text-align: left;
+			padding: 1rem;
+			font-size: 1.5rem;
+			background-color: #3b3b3b;
+            font-family: Libre Baskerville,Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+    line-height: 1.6;
+		}
 
