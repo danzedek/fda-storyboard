@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto:wght@400;700&display=swap" rel="stylesheet">
+
     
 </head>
 
@@ -58,19 +59,19 @@
 
 			<article>
 				<div class="step" data-step="1">
-					<p>The FDA approved 85% of new drugs without evidence that they work.</p>
+					<p>The FDA approved <span class="highlight">85%</span> of new drugs <span class="highlight">without evidence that they work.</span></p>
 				</div>
 				<div class="step" data-step="2">
-					<p>The agency allowed some drugs to remain on the market even when studies conducted after approval failed to show any benefit to patients.</p>
+                    <p>The agency allowed some drugs to remain on the market even when studies conducted after approval <span class="highlight">failed to show any benefit</span> to patients.</p>
 				</div>
 				<div class="step" data-step="3">
-					<p>More than half of drug applications falsely claim to qualify for a program offering greater profits and longer patent rights. This designation, called orphan drug status, only applies to diseases affecting less than 200,000 people. Yet drug companies claim orphan status in 54% of applications, most of which involve as many as a million patients.</p>
+                    <p>More than half of drug applications <span class="highlight">falsely claim to qualify</span> for a program offering greater profits and longer patent rights. This designation, called orphan drug status, only applies to diseases affecting less than 200,000 people. Yet drug companies claim orphan status in 54% of applications, most of which involve as many as a million patients.</p>
 				</div>
 				<div class="step" data-step="4">
-					<p>An Alzheimer’s drug, Leqembi, approved by the FDA this year, is being hailed by the company, patient advocacy groups and neurologists as a “breakthrough.” The drug has little or no effect on symptoms and comes with potentially deadly side effects. </p>
+                    <p>An Alzheimer’s drug, Leqembi, approved by the FDA this year, is being hailed by the company, patient advocacy groups and neurologists as a “breakthrough.” The drug has <span class="highlight">little or no effect on symptoms</span> and comes with potentially deadly side effects. </p>
 				</div>
                 <div class="step" data-step="5">
-					<p>Eighty-one percent of drugs are rushed through FDA review through the use of lower levels of scientific evidence than standard approvals. Such faster approvals are supposed to be reserved for potentially life-threatening diseases, but the FDA has used them for conditions like migraine and psoriasis. </p>
+                    <p><span class="highlight">81%</span> of drugs are <span class="highlight">rushed through FDA review</span> through the use of lower levels of scientific evidence than standard approvals. Such faster approvals are supposed to be reserved for potentially life-threatening diseases, but the FDA has used them for conditions like migraine and psoriasis. </p>
 				</div>
 			</article>
 		</section>
@@ -125,10 +126,10 @@ href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120974/#:~:text=Cerivastatin
   
     <div class="drugbox" id="drugsearch" style="margin-bottom: 30px;">
         <form action="/action_page.php">
-        <label for="fname">Look up drug approval </label>
-            <p style="margin-bottom: 5px">Check any drug approved from 2013 to 2022 to see if it was rigorously tested</p>
-        <input type="text" id="drugname" name="drugname" value="Drug name" style="font-size: 1.1em; color:#999;padding:5px"><br><br>
-            <button id="search" onclick="showHide()">Search</button>
+        <label for="fname">Was drug rigorously tested? </label>
+            <p style="margin-bottom: 5px">Look up drugs approved from 2013-22</p>
+        <input type="text" id="drugname" name="drugname" value="Drug name" style="font-size: 1.1em; color:#999;padding:5px;width: 85%">
+            <button id="search" onclick="showHide()">&#x2794;</button>
         </form>
     </div>
     
@@ -141,15 +142,15 @@ href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120974/#:~:text=Cerivastatin
             <p><b>Condition treated</b></p>
             <p style="grid-column-start: 2; grid-column-end: 4; font-weight: 400">Relapsing forms of multiple sclerosis </p>
             <p><b>Black box warning</b></p>
-            <p style ="background-color: #02A371; color: white; grid-column-start: 2; grid-column-end: 4; text-align: center"><span style="position: relative;top: 25px;">No</span></p>
-            <p><b>Approved based rigorous testing?</b></p>
-            <p style ="background-color: #990000; color: white; grid-column-start: 2; grid-column-end: 4; text-align: center"><span style="position: relative;top: 35px;">No</span></p>
+            <p class="readout jungle"><span>No</span></p>
+            <p><b>Minimal FDA standards met</b></p>
+            <p class="readout chili"><span>No</span></p>
         </div>
        
             <p class="reasons"><b>Reasons testing was <span style="background-color: #990000; color:white;padding: 0 3px;">not rigorous</span></b></p>
             <p>Test was not blinded. Test did not use control group. </p>
               <form action="/action_page.php" style="margin-top: 30px;">
-                  <button type="submit" id="search" >Search for another drug</button>
+                  <button type="submit" id="searchagain" >Search for another drug</button>
         </form>      
         </div>
     </div>
@@ -545,7 +546,7 @@ function showHide() {
 		function handleResize() {
 			// 1. update height of step elements
 			var stepH = Math.floor(window.innerHeight * 0.5);
-			step.style("height", stepH + "px");
+			step.style("height", "auto");
 
 			var figureHeight = window.innerHeight;
 			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
